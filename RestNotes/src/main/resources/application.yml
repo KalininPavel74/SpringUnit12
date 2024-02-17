@@ -1,0 +1,36 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: RestNotes
+  datasource:
+    name: notes
+    generate-unique-name: false
+  data:
+    rest:
+      base-path: /default-api
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: false
+    hibernate:
+      show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+
+management:  # для prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # metrics,Prometheus
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always

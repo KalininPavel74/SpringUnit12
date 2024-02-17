@@ -1,0 +1,53 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: WebClient1
+  datasource:
+    name: users
+    generate-unique-name: false
+  data:
+    rest:
+      base-path: /default-api
+  thymeleaf:
+    cache: false
+  jpa:
+    show-sql: false
+    hibernate:
+      show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+management:  # для prometheus
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "*"  # metrics,Prometheus
+    jmx:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+#
+#    enabled-by-default: false
+#  endpoint:
+#    info:
+#      enabled: true
+
+
+
+
+
+
+# не работает http://localhost:8080/actuator/info
+info:
+  app:
+    name: "WebClient1"
+#     version: 1.0-SNAPSHOT
+#        description: This app does Web Client 1!

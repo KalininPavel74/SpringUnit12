@@ -1,0 +1,21 @@
+17.02.2024 15:01 GET /RestNotes/api/
+17.02.2024 15:01 POST /RestNotes/api/ Note(id=null, name=1111111, number=1.0)
+17.02.2024 15:01 GET /RestNotes/api/
+17.02.2024 15:01 POST /RestNotes/api/ Note(id=null, name=222222222, number=2.0)
+17.02.2024 15:01 GET /RestNotes/api/
+17.02.2024 15:03 GET /RestNotes/api/
+17.02.2024 15:03 GET /RestNotes/api/{id} 1
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:04 POST /RestNotes/api/ Note(id=null, name=5555555, number=555.0)
+17.02.2024 15:04 GET /RestNotes/api/
+17.02.2024 15:35 GET /RestNotes/api/
+17.02.2024 15:36 POST /RestNotes/api/ Note(id=null, name=222222, number=1111111.0)
+17.02.2024 15:36 GET /RestNotes/api/
+17.02.2024 15:36 GET /RestNotes/api/
+17.02.2024 15:36 GET /RestNotes/api/
+17.02.2024 15:36 GET /RestNotes/api/
+17.02.2024 15:36 GET /RestNotes/api/
